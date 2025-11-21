@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototipo Interactivo de Figma</title>
+
+    <style>
+      /* 🎨 Estilo básico para el cuerpo y el fondo */
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        min-height: 100vh; /* Asegura que el body cubra toda la altura */
+
+        /* --- IMPLEMENTACIÓN DE LA IMAGEN DE FONDO PNG --- */
+        background-image: url("images/webfindf.png");
+        background-size: cover; /* Cubre todo el fondo */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita repetición */
+        background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+        /* ------------------------------------------------ */
+      }
+
+      /* ✒️ Estilo para el título */
+      h1 {
+        color: #ffffff; /* Color de texto blanco para resaltar */
+        margin-bottom: 20px;
+        /* Sombra de texto para mejorar la legibilidad sobre fondos complejos */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+      }
+
+      /* 🖼️ Estilos del contenedor del iframe */
+      .iframe-container {
+        /* Fondo semi-transparente opcional para que el iframe destaque */
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px; /* Espacio alrededor del iframe */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+        border-radius: 8px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <audio controls **autoplay loop muted**>
+      <source src="audio/card.mp3" type="audio/mpeg" />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+    <h1>¡Find Fungus Prototipo de Figma!</h1>
+
+    <div class="iframe-container">
+      <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px"
+        width="900"
+        height="650"
+        src="https://embed.figma.com/proto/2up7l5My0CYdFEs00Hvi81/Untitled?page-id=136%3A107&node-id=269-162&p=f&viewport=-74%2C326%2C0.24&scaling=scale-down&content-scaling=fixed&starting-point-node-id=269%3A162&embed-host=share"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+  </body>
+</html>
